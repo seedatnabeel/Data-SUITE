@@ -3,7 +3,7 @@
 
 This repository contains the implementation of Data-SUITE, a "Data-Centric AI" method to identify in-distribution incongruous data examples.
 
-DATA-SUITE leverages copula modeling, representation learning, and conformal prediction to build feature-wise confidence interval estimators based on a set of training instances. The copula modeling is optional, but allows a nice property of not needing access to real training data after the initial stages.
+DATA-SUITE leverages copula modeling, representation learning, and conformal prediction to build feature-wise confidence interval estimators based on a set of training instances. The copula modeling is optional, but allows a nice property of not needing access to real training data after the initial stages or to augment smaller datasets when needed.
 
 These estimators can be used to evaluate the congruence of test instances with respect to the training set, to answer two practically useful questions:
 
@@ -65,18 +65,18 @@ The synthetic data experiment uses [Weights and Biases - wandb](https://wandb.ai
 
 Your specific wandb credentials should be added to: ``notebooks/synthetic_pipeline.ipynb``
 
-Thereafter one can run:
+Thereafter one can run from the main dir:
 ```shell
 bash scripts/synthetic_pipeline.sh
 ```
 
-Once the experiment has completed all results are logged to wandb. Note this run might take quite some time.
+Once the experiment has completed all results are logged to wandb. Note this run might take quite some time. One can then download the .csv of logged results from wandb and place it in the ``/artifacts`` folder as ``synthetic_artifacts.csv``.
 
-One can download the .csv of logged results from wandb and place it in the ``/artifacts`` folder as ``synthetic_artifacts.csv``. We have provided an example ``synthetic_artifacts.csv`` obtained from wandb as an artifact.
+Since the experiment can take quite long, we have provided an artifact ``synthetic_artifacts.csv`` obtained from wandb.
 
-The csv must then be processed to obtain the desired metrics:
+``synthetic_artifacts.csv`` can then be processed processed to obtain the desired metrics & plots:
 
-For this run:
+For this run from the main dir:
 
 ```shell
 bash scripts/process_synthetic.sh
@@ -87,7 +87,7 @@ All results will then be written to ``/results/synthetic``
 
 2. Real data:
 
-To run the public real-world datasets one simply needs to run for example:
+To run the public real-world datasets one simply needs to run, for example,  from the main dir:
 
 ```shell
 bash scripts/run_adult.sh

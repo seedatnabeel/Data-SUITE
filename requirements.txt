@@ -11,6 +11,7 @@ opentsne==0.6.1
 papermill==2.3.4
 pre-commit==2.19.0
 pyod==1.0.1
+scikit-learn-extra==0.2.0
 scikit_learn
 scipy==1.7.1
 suod==0.0.8
