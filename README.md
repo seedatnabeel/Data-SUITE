@@ -1,7 +1,7 @@
 # Data-SUITE: Data-centric identification of in-distribution incongruous examples
 ![image](overview.png "How Data-SUITE can be used in practice")
 
-This repository contains the implementation of Data-SUITE, a "Data-Centric AI" method to identify in-distribution incongruous data examples.
+This repository contains the implementation of Data-SUITE, a "Data-Centric AI" framework to identify in-distribution incongruous data examples.
 
 DATA-SUITE leverages copula modeling, representation learning, and conformal prediction to build feature-wise confidence interval estimators based on a set of training instances. The copula modeling is optional, but allows a nice property of not needing access to real training data after the initial stages or to augment smaller datasets when needed.
 
