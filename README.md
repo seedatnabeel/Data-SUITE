@@ -1,4 +1,9 @@
 # Data-SUITE: Data-centric identification of in-distribution incongruous examples
+
+[![arXiv](https://img.shields.io/badge/arXiv-2202.08836-b31b1b.svg)](https://arxiv.org/abs/2202.08836)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/vanderschaarlab/Data-SUITE/blob/main/LICENSE)
+
+
 ![image](overview.png "How Data-SUITE can be used in practice")
 
 This repository contains the implementation of Data-SUITE, a "Data-Centric AI" framework to identify in-distribution incongruous data examples.
